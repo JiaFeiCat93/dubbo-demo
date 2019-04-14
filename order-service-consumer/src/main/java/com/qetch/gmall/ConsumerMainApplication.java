@@ -15,8 +15,8 @@ public class ConsumerMainApplication {
 		ioc.start();
 		
 		OrderService orderService = ioc.getBean(OrderServiceImpl.class);
-		orderService.initOrder(1);
-		System.out.println("调用完成...");
+		orderService.initOrder("1");
+		System.out.println("璋冪敤瀹屾垚...");
 		System.in.read();
 	}
 }

@@ -9,9 +9,9 @@ import com.qetch.gmall.service.UserService;
 public class UserServiceImpl implements UserService {
 
 	@Override
-	public List<UserAddress> listUserAddress(Integer userId) {
-		UserAddress userAddress1 = new UserAddress(1, 1, "±±¾©ÊĞº£µíÇøÉÏµØÊ®½Ö»Ô»Í¹ú¼Ê1ºÅÂ¥709", "´ºÅ¯»¨¿ª", "18200000001");
-		UserAddress userAddress2 = new UserAddress(2, 1, "±±¾©ÊĞº£µíÇøÇåºÓÃ«·ÄÂ·16ºÅÔº", "´ºÅ¯»¨¿ª", "18200000001");
+	public List<UserAddress> listUserAddress(String userId) {
+		UserAddress userAddress1 = new UserAddress(1, 1, "åŒ—äº¬å¸‚æµ·æ·€åŒºä¸Šåœ°åè¡—è¾‰ç…Œå›½é™…1å·æ¥¼709", "æ˜¥æš–èŠ±å¼€", "18200000001");
+		UserAddress userAddress2 = new UserAddress(2, 1, "åŒ—äº¬å¸‚æµ·æ·€åŒºæ¸…æ²³æ¯›çººè·¯16å·é™¢", "æ˜¥æš–èŠ±å¼€", "18200000001");
 		return Arrays.asList(userAddress1,userAddress2);
 	}
 }

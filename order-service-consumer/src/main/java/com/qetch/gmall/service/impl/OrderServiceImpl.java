@@ -16,7 +16,7 @@ public class OrderServiceImpl implements OrderService {
 	UserService userService;
 	
 	@Override
-	public List<UserAddress> initOrder(Integer userId) {
+	public List<UserAddress> initOrder(String userId) {
 		List<UserAddress> userAddressList = userService.listUserAddress(userId);
 		for (UserAddress userAddress : userAddressList) {
 			System.out.println(userAddress.getAddress());
